@@ -4,7 +4,7 @@
 <!--- Title -->
 <!--- must match repository name -->
 <!--- REQUIRED -->
-
+creation-date-filename
 #  
 
 <!--- Banner -->
@@ -24,13 +24,18 @@
 <!--- Must not have its own title -->
 <!--- Must be less than 120 characters -->
 <!--- Must match GitHub's description -->
+Prepend the creationdate to the filename
+
 
 
 <!--- Long Description -->
 <!--- OPTIONAL -->
 <!--- Must not have its own title -->
 <!--- A detailed description of the repo -->
-
+This simply takes the creation date of the file and renames the same file with that date on the start. This is useful as
+some camera manufacturers (looking at you *GoPro*) use a seemingly random number for their filenames, which is utterly
+useless. Using an ISO8601 datetime ensures that the file is ordered correctly in the file list, as well as the timeline
+of your favourite non-linear video editor.
 ## Table of Contents
 
 <!--- REQUIRED -->
@@ -52,12 +57,17 @@
 <!--- Explain how to install the thing. -->
 <!--- OPTIONAL IF documentation repo -->
 <!--- ELSE REQUIRED -->
+- Put all the files you want to rename in one folder, no other files.
+- Install Python3
+- Run `main.py`.
+
+Currently only tested in Windows 10.
 
 ## Usage
 
 <!--- REQUIRED -->
 <!--- Explain what the thing does. Use screenshots or videos. -->
-
+Literally just renames files with their creation or modification date.
 
 <!-- Extra sections -->
 <!--- OPTIONAL -->
